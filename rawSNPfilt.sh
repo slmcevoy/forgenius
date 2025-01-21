@@ -1,17 +1,44 @@
 #!/bin/bash
-
-# running this step first to separate SNPs for data exploration in scikit-allel: full set of SPET, random only, target only
+#SBATCH --job-name=pavi
+#SBATCH --output=pavi_%j.o
+#SBATCH --error=pavi_%j.e
+#SBATCH --account=
+#SBATCH --partition=small
+#SBATCH --time=08:00:00
+#SBATCH --ntasks=1
+#SBATCH --mem=80G
+#SBATCH --mail-type=END
+#SBATCH --cpus-per-task=1
+#SBATCH --gres=nvme:100
 
 export TMPDIR=${LOCAL_SCRATCH}
-SPECIES=Fexcelsior
-GENOME=FRAX_001_PL_genomic.fasta
-INPUT=Fraxinus_excelsior_raw.vcf.gz
-OUTCORE=vcf_filtering
-OUTDIR=$OUTCORE
-mkdir -p "$OUTDIR"/statistics
-REGIONS=Fexcelsior_region.bed
-RANDOM_REGIONS=Fexcelsior_random_region.bed
-TARGET_REGIONS=Fexcelsior_target_region.bed
+
+#running this step first to separate SNPs for data exploration in scikit-allel: full set of SPET, random only, target only
+
+# just change these three variables as needed
+SPECIES=Pavium
+GENOME_FILENAME=Prunus_avium_Tieton.chr.fasta
+VCF_FILENAME=Prunus_avium_raw.vcf.gz
+
+PROJDIR=/users/mcevoysu/scratch
+DATADIR=$PROJDIR/data/$SPECIES
+GENOME=$DATADIR/$GENOME_FILENAME
+INPUT=$DATADIR/$VCF_FILENAME
+OUTDIR=$PROJDIR/output/$SPECIES
+mkdir -p $OUTDIR
+OUTDIR=$OUTDIR/vcf_filtering
+mkdir -p $OUTDIR "$OUTDIR"/statistics
+
+# intervals have been provded in .txt tab-delimited files
+# be sure to change these to .bed files with 0-based start coordinate for GATK
+SPECIES_LC="${SPECIES,}"
+REGIONS=$DATADIR/"$SPECIES_LC"_regions.bed
+RANDOM_REGIONS=$DATADIR/"$SPECIES_LC"_random_regions.bed
+TARGET_REGIONS=$DATADIR/"$SPECIES_LC"_target_regions.bed
+
+awk 'BEGIN { OFS = "\t" } { print $1, $2-1, $3 }' < $DATADIR/"$SPECIES_LC"_regions.txt > $REGIONS
+awk 'BEGIN { OFS = "\t" } { print $1, $2-1, $3 }' < $DATADIR/"$SPECIES_LC"_random_regions.txt > $RANDOM_REGIONS
+awk 'BEGIN { OFS = "\t" } { print $1, $2-1, $3 }' < $DATADIR/"$SPECIES_LC"_target_regions.txt > $TARGET_REGIONS
 
 ### splitting var and invar following Pixy recommendations
 ### https://pixy.readthedocs.io/en/latest/guide/pixy_guide.html#optional-population-genetic-filters
@@ -22,9 +49,6 @@ module load gatk/4.5.0.0
 
 gatk CreateSequenceDictionary -R "$GENOME"
 samtools faidx "$GENOME"
-
-gatk IndexFeatureFile \
-	     -I $INPUT
 
 # SNP selection
 # --ignore-non-ref-in-types If set, NON_REF alleles will be ignored for variant type determination, which is required for filtering GVCF files by type
@@ -37,12 +61,12 @@ gatk --java-options "-Djava.io.tmpdir=${LOCAL_SCRATCH} -Xmx60G" SelectVariants \
 --ignore-non-ref-in-types TRUE \
 -O "$OUTDIR"/raw_SNP.vcf.gz
 
-module load vcftools
-module load samtools
-bcftools stats "$OUTDIR"/raw_SNP.vcf.gz > "$OUTDIR"/statistics/raw_SNP.stats
-
+# create subsets
 bcftools view -Oz -R "$RANDOM_REGIONS" "$OUTDIR"/raw_SNP.vcf.gz -o $OUTDIR/raw_SNP_random.vcf.gz
 bcftools view -Oz -R "$TARGET_REGIONS" "$OUTDIR"/raw_SNP.vcf.gz -o $OUTDIR/raw_SNP_target.vcf.gz
+
+# write statistics
+bcftools stats "$OUTDIR"/raw_SNP.vcf.gz > "$OUTDIR"/statistics/raw_SNP.stats
 bcftools stats "$OUTDIR"/raw_SNP_random.vcf.gz > "$OUTDIR"/statistics/raw_SNP_random.stats
 bcftools stats "$OUTDIR"/raw_SNP_target.vcf.gz > "$OUTDIR"/statistics/raw_SNP_target.stats
 
