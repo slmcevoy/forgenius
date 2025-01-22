@@ -63,7 +63,7 @@ INOUT=Ppinaster/Pinus_pinaster
 #awk -F '\t' 'BEGIN {OFS = FS} {print 1,$(NF-26),0,+NR }' $DIR1/data/$INOUT.txt.tmp > $DIR1/data/$INOUT.map
 
 # create a vcf
-plink --bfile $DIR1/output/$INOUT --out $DIR1/output/$INOUT --recode vcf-iid --allow-extra-chr --double-id --distance triangle --threads 4 --memory 1000
+plink --bfile $DIR1/output/$INOUT --out $DIR1/output/$INOUT --recode vcf-iid --keep-allele-order --allow-extra-chr --double-id --distance triangle --threads 4 --memory 1000
 bgzip "$DIR1"/output/"$INOUT".vcf
 tabix "$DIR1"/output/"$INOUT".vcf.gz
 bcftools stats "$DIR1"/output/"$INOUT".vcf.gz > "$DIR1"/output/Psylvestris/statistics/Pinus_sylvestris.stats
