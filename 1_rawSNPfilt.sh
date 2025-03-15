@@ -24,10 +24,8 @@ PROJDIR=/users/mcevoysu/scratch
 DATADIR=$PROJDIR/data/$SPECIES
 GENOME=$DATADIR/$GENOME_FILENAME
 INPUT=$DATADIR/$VCF_FILENAME
-OUTDIR=$PROJDIR/output/$SPECIES
-mkdir -p $OUTDIR
-OUTDIR=$OUTDIR/vcf_filtering
-mkdir -p $OUTDIR "$OUTDIR"/statistics
+OUTDIR=$PROJDIR/output/vcf_filtering/$SPECIES
+mkdir -p "$OUTDIR"/statistics
 
 # intervals have been provded in .txt tab-delimited files
 # be sure to change these to .bed files with 0-based start coordinate for GATK
@@ -41,6 +39,7 @@ awk 'BEGIN { OFS = "\t" } { print $1, $2-1, $3 }' < $DATADIR/"$SPECIES_LC"_rando
 awk 'BEGIN { OFS = "\t" } { print $1, $2-1, $3 }' < $DATADIR/"$SPECIES_LC"_target_regions.txt > $TARGET_REGIONS
 
 ### splitting var and invar following Pixy recommendations
+### vars first - invars at end of filtering file
 ### https://pixy.readthedocs.io/en/latest/guide/pixy_guide.html#optional-population-genetic-filters
 
 module load vcftools

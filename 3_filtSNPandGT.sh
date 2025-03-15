@@ -32,7 +32,7 @@ PROJDIR=/users/mcevoysu/scratch
 DATADIR=$PROJDIR/data/$SPECIES
 GENOME=$DATADIR/$GENOME_FILENAME
 INPUT=$DATADIR/$VCF_FILENAME
-OUTDIR=$PROJDIR/output/$SPECIES/vcf_filtering
+OUTDIR=$PROJDIR/output/vcf_filtering/$SPECIES
 
 SPECIES_LC="${SPECIES,}"
 REGIONS=$DATADIR/"$SPECIES_LC"_regions.bed
@@ -45,7 +45,6 @@ INVARIANT2="$OUTDIR/$SPECIES"_SPET_invariant_filt.g.vcf.gz
 SAMPLE_SIZE="$(wc -l /users/mcevoysu/scratch/data/${SPECIES}/samples.txt | cut -f1 -d ' ' -)"
 echo "$(($SAMPLE_SIZE/2))"
 
-mkdir -p $OUTDIR/statistics
 ln -s ../HDplot_analyze.R .
 ln -s ../HDplot_python.p645.py .
 ln -s ../vcf_to_depth_p645.py .
