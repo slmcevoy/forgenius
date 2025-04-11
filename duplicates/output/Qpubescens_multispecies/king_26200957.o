@@ -1,0 +1,894 @@
+Launching R...
+
+R version 4.4.0 (2024-04-24) -- "Puppy Cup"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Aalba/vcf_filtering/Aalba_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Aalba], --rpath []
+
+KING starts at Sun Feb  2 19:34:54 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Aalba/vcf_filtering/Aalba_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 414 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Aalba/vcf_filtering/Aalba_SNP_sampleFilt.bim...
+  Genotype data consist of 66943 autosome SNPs
+  PLINK maps loaded: 66943 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Aalba/vcf_filtering/Aalba_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 1046 words for each of 414 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Aalba
+
+Relationship inference across families starts at Sun Feb  2 19:34:58 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%                                         ends at Sun Feb  2 19:35:03 2025
+Between-family kinship data saved in file kinship/king_Aalba.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:03 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Anebrodensis/vcf_filtering/Anebrodensis_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Anebrodensis],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:35:04 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Anebrodensis/vcf_filtering/Anebrodensis_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 25 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Anebrodensis/vcf_filtering/Anebrodensis_SNP_sampleFilt.bim...
+  Genotype data consist of 16828 autosome SNPs
+  PLINK maps loaded: 16828 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Anebrodensis/vcf_filtering/Anebrodensis_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 263 words for each of 25 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Anebrodensis
+
+Relationship inference across families starts at Sun Feb  2 19:35:05 2025
+4 CPU cores are used.
+                                         ends at Sun Feb  2 19:35:06 2025
+Between-family kinship data saved in file kinship/king_Anebrodensis.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:06 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Bpendula/vcf_filtering/Bpendula_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Bpendula],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:35:06 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Bpendula/vcf_filtering/Bpendula_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 364 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Bpendula/vcf_filtering/Bpendula_SNP_sampleFilt.bim...
+  Genotype data consist of 167558 autosome SNPs
+  PLINK maps loaded: 167558 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Bpendula/vcf_filtering/Bpendula_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 2619 words for each of 364 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Bpendula
+
+Relationship inference across families starts at Sun Feb  2 19:35:08 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%                                         ends at Sun Feb  2 19:35:17 2025
+Between-family kinship data saved in file kinship/king_Bpendula.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:17 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Csativa/vcf_filtering/Csativa_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Csativa],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:35:17 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Csativa/vcf_filtering/Csativa_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 317 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Csativa/vcf_filtering/Csativa_SNP_sampleFilt.bim...
+  Genotype data consist of 45308 autosome SNPs
+  PLINK maps loaded: 45308 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Csativa/vcf_filtering/Csativa_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 708 words for each of 317 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Csativa
+
+Relationship inference across families starts at Sun Feb  2 19:35:17 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%                                         ends at Sun Feb  2 19:35:23 2025
+Between-family kinship data saved in file kinship/king_Csativa.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:23 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Csativa_multispecies/vcf_filtering/Csativa_multispecies_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter :
+                                    --prefix [kinship/king_Csativa_multispecies],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:35:23 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Csativa_multispecies/vcf_filtering/Csativa_multispecies_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 317 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Csativa_multispecies/vcf_filtering/Csativa_multispecies_SNP_sampleFilt.bim...
+  Genotype data consist of 64212 autosome SNPs
+  PLINK maps loaded: 64212 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Csativa_multispecies/vcf_filtering/Csativa_multispecies_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 1004 words for each of 317 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Csativa_multispecies
+
+Relationship inference across families starts at Sun Feb  2 19:35:24 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%                                         ends at Sun Feb  2 19:35:25 2025
+Between-family kinship data saved in file kinship/king_Csativa_multispecies.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:25 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Fexcelsior/vcf_filtering/Fexcelsior_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Fexcelsior],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:35:25 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Fexcelsior/vcf_filtering/Fexcelsior_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 332 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Fexcelsior/vcf_filtering/Fexcelsior_SNP_sampleFilt.bim...
+  Genotype data consist of 259272 autosome SNPs
+  PLINK maps loaded: 259272 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Fexcelsior/vcf_filtering/Fexcelsior_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 4052 words for each of 332 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Fexcelsior
+
+Relationship inference across families starts at Sun Feb  2 19:35:25 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%                                         ends at Sun Feb  2 19:35:29 2025
+Between-family kinship data saved in file kinship/king_Fexcelsior.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:29 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Pabies/vcf_filtering/Pabies_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Pabies], --rpath []
+
+KING starts at Sun Feb  2 19:35:29 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Pabies/vcf_filtering/Pabies_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 390 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Pabies/vcf_filtering/Pabies_SNP_sampleFilt.bim...
+  Genotype data consist of 57979 autosome SNPs
+  PLINK maps loaded: 57979 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Pabies/vcf_filtering/Pabies_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 906 words for each of 390 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Pabies
+
+Relationship inference across families starts at Sun Feb  2 19:35:30 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%                                         ends at Sun Feb  2 19:35:48 2025
+Between-family kinship data saved in file kinship/king_Pabies.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:48 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Pavium/vcf_filtering/Pavium_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Pavium], --rpath []
+
+KING starts at Sun Feb  2 19:35:48 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Pavium/vcf_filtering/Pavium_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 264 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Pavium/vcf_filtering/Pavium_SNP_sampleFilt.bim...
+  Genotype data consist of 85249 autosome SNPs
+  PLINK maps loaded: 85249 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Pavium/vcf_filtering/Pavium_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 1333 words for each of 264 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Pavium
+
+Relationship inference across families starts at Sun Feb  2 19:35:50 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%                                         ends at Sun Feb  2 19:35:51 2025
+Between-family kinship data saved in file kinship/king_Pavium.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:35:51 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Phalepensis/vcf_filtering/Phalepensis_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Phalepensis],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:35:51 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Phalepensis/vcf_filtering/Phalepensis_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 351 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Phalepensis/vcf_filtering/Phalepensis_SNP_sampleFilt.bim...
+  Genotype data consist of 34671 autosome SNPs
+  PLINK maps loaded: 34671 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Phalepensis/vcf_filtering/Phalepensis_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 542 words for each of 351 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Phalepensis
+
+Relationship inference across families starts at Sun Feb  2 19:35:59 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%                                         ends at Sun Feb  2 19:36:03 2025
+Between-family kinship data saved in file kinship/king_Phalepensis.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:03 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Pinusnigra/vcf_filtering/Pinusnigra_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Pinusnigra],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:36:03 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Pinusnigra/vcf_filtering/Pinusnigra_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 370 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Pinusnigra/vcf_filtering/Pinusnigra_SNP_sampleFilt.bim...
+  Genotype data consist of 93975 autosome SNPs
+  PLINK maps loaded: 93975 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Pinusnigra/vcf_filtering/Pinusnigra_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 1469 words for each of 370 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Pinusnigra
+
+Relationship inference across families starts at Sun Feb  2 19:36:05 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%                                         ends at Sun Feb  2 19:36:06 2025
+Between-family kinship data saved in file kinship/king_Pinusnigra.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:06 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Qilex/vcf_filtering/Qilex_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Qilex], --rpath []
+
+KING starts at Sun Feb  2 19:36:06 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Qilex/vcf_filtering/Qilex_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 335 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Qilex/vcf_filtering/Qilex_SNP_sampleFilt.bim...
+  Genotype data consist of 107911 autosome SNPs
+  876 other SNPs are removed.
+  PLINK maps loaded: 107911 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Qilex/vcf_filtering/Qilex_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 1687 words for each of 335 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Qilex
+
+Relationship inference across families starts at Sun Feb  2 19:36:06 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%                                         ends at Sun Feb  2 19:36:07 2025
+Between-family kinship data saved in file kinship/king_Qilex.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:07 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Qilex_multispecies/vcf_filtering/Qilex_multispecies_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Qilex_multispecies],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:36:07 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Qilex_multispecies/vcf_filtering/Qilex_multispecies_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 335 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Qilex_multispecies/vcf_filtering/Qilex_multispecies_SNP_sampleFilt.bim...
+  Genotype data consist of 239078 autosome SNPs
+  PLINK maps loaded: 239078 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Qilex_multispecies/vcf_filtering/Qilex_multispecies_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 3736 words for each of 335 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Qilex_multispecies
+
+Relationship inference across families starts at Sun Feb  2 19:36:08 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%                                         ends at Sun Feb  2 19:36:10 2025
+Between-family kinship data saved in file kinship/king_Qilex_multispecies.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:10 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Qpubescens/vcf_filtering/Qpubescens_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Qpubescens],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:36:10 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Qpubescens/vcf_filtering/Qpubescens_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 122 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Qpubescens/vcf_filtering/Qpubescens_SNP_sampleFilt.bim...
+  Genotype data consist of 170451 autosome SNPs
+  PLINK maps loaded: 170451 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Qpubescens/vcf_filtering/Qpubescens_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 2664 words for each of 122 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Qpubescens
+
+Relationship inference across families starts at Sun Feb  2 19:36:13 2025
+4 CPU cores are used.
+0%1%                                         ends at Sun Feb  2 19:36:18 2025
+Between-family kinship data saved in file kinship/king_Qpubescens.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:18 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Qpubescens_multispecies/vcf_filtering/Qpubescens_multispecies_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter :
+                                    --prefix [kinship/king_Qpubescens_multispecies],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:36:23 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Qpubescens_multispecies/vcf_filtering/Qpubescens_multispecies_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 123 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Qpubescens_multispecies/vcf_filtering/Qpubescens_multispecies_SNP_sampleFilt.bim...
+  Genotype data consist of 270003 autosome SNPs
+  PLINK maps loaded: 270003 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Qpubescens_multispecies/vcf_filtering/Qpubescens_multispecies_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 4219 words for each of 123 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Qpubescens_multispecies
+
+Relationship inference across families starts at Sun Feb  2 19:36:31 2025
+4 CPU cores are used.
+0%1%                                         ends at Sun Feb  2 19:36:35 2025
+Between-family kinship data saved in file kinship/king_Qpubescens_multispecies.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:35 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Qsuber/vcf_filtering/Qsuber_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Qsuber], --rpath []
+
+KING starts at Sun Feb  2 19:36:35 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Qsuber/vcf_filtering/Qsuber_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 372 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Qsuber/vcf_filtering/Qsuber_SNP_sampleFilt.bim...
+  Genotype data consist of 23976 autosome SNPs
+  165 other SNPs are removed.
+  PLINK maps loaded: 23976 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Qsuber/vcf_filtering/Qsuber_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 375 words for each of 372 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Qsuber
+
+Relationship inference across families starts at Sun Feb  2 19:36:38 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%                                         ends at Sun Feb  2 19:36:39 2025
+Between-family kinship data saved in file kinship/king_Qsuber.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:39 2025
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Qsuber_multispecies/vcf_filtering/Qsuber_multispecies_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter :
+                                    --prefix [kinship/king_Qsuber_multispecies],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:36:39 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Qsuber_multispecies/vcf_filtering/Qsuber_multispecies_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 372 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Qsuber_multispecies/vcf_filtering/Qsuber_multispecies_SNP_sampleFilt.bim...
+  Genotype data consist of 107826 autosome SNPs
+  PLINK maps loaded: 107826 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Qsuber_multispecies/vcf_filtering/Qsuber_multispecies_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%
+FATAL ERROR - 
+Not enough genotypes at the 53913th marker
+
+
+KING 2.3.2 - (c) 2010-2023 Wei-Min Chen
+
+The following parameters are in effect:
+                   Binary File : /users/mcevoysu/scratch/output/Tbaccata/vcf_filtering/Tbaccata_SNP_sampleFilt.bed (-bname)
+
+Additional Options
+         Close Relative Inference : --related, --duplicate
+   Pairwise Relatedness Inference : --kinship [ON], --ibdseg, --ibs, --makeGRM
+              Inference Parameter : --degree, --noscreen, --seglength,
+                                    --minConc [0.80]
+         Relationship Application : --unrelated, --cluster, --build
+                        QC Report : --bysample, --bySNP, --roh, --autoQC
+                     QC Parameter : --callrateN, --callrateM
+             Population Structure : --pca, --mds
+              Structure Parameter : --projection, --pcs
+          Quantitative Trait GWAS : --lmm
+                Binary Trait GWAS : --tdt, --gdt
+                Association Model : --trait [], --covariate [], --maxP
+     Association Method Parameter : --invnorm
+               Genetic Risk Score : --risk, --model [], --prevalence, --noflip
+              Computing Parameter : --cpus [4]
+                   Optional Input : --fam [], --bim [], --phefile [],
+                                    --covfile [], --prunedsnp [],
+                                    --sexchr [23]
+                           Output : --rplot, --pngplot, --plink
+                 Output Parameter : --prefix [kinship/king_Tbaccata],
+                                    --rpath []
+
+KING starts at Sun Feb  2 19:36:40 2025
+Loading genotype data in PLINK binary format...
+Read in PLINK fam file /users/mcevoysu/scratch/output/Tbaccata/vcf_filtering/Tbaccata_SNP_sampleFilt.fam...
+  PLINK pedigrees loaded: 379 samples
+Read in PLINK bim file /users/mcevoysu/scratch/output/Tbaccata/vcf_filtering/Tbaccata_SNP_sampleFilt.bim...
+  Genotype data consist of 52533 autosome SNPs
+  PLINK maps loaded: 52533 SNPs
+Read in PLINK bed file /users/mcevoysu/scratch/output/Tbaccata/vcf_filtering/Tbaccata_SNP_sampleFilt.bed...
+0%6%13%19%25%31%38%44%50%56%63%69%75%81%88%  PLINK binary genotypes loaded.
+94%  KING format genotype data successfully converted.
+Autosome genotypes stored in 821 words for each of 379 individuals.
+
+Options in effect:
+	--kinship
+	--cpus 4
+	--prefix kinship/king_Tbaccata
+
+Relationship inference across families starts at Sun Feb  2 19:36:42 2025
+4 CPU cores are used.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%                                         ends at Sun Feb  2 19:36:44 2025
+Between-family kinship data saved in file kinship/king_Tbaccata.kin0
+Note --kinship --degree <n> can filter & speed up the kinship computing.
+KING ends at Sun Feb  2 19:36:44 2025
+

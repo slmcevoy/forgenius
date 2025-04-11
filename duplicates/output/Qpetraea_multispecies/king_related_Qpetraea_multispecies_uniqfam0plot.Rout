@@ -1,0 +1,40 @@
+
+R version 4.4.2 (2024-10-31) -- "Pile of Leaves"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> ## /users/mcevoysu/scratch/output/king/Qpetraea_multispecies/king_related_Qpetraea_multispecies_uniqfam0plot.R for KING --related, by Wei-Min Chen and Zhennan Zhu
+> rm(list=ls(all=TRUE))
+> library(igraph)
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+> data <- read.table(file="/users/mcevoysu/scratch/output/king/Qpetraea_multispecies/king_related_Qpetraea_multispecies.kin0", header=TRUE, stringsAsFactors=FALSE)[,c("ID1", "ID2", "InfType")]
+Error in `[.data.frame`(read.table(file = "/users/mcevoysu/scratch/output/king/Qpetraea_multispecies/king_related_Qpetraea_multispecies.kin0",  : 
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted

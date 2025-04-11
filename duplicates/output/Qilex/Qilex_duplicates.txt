@@ -1,0 +1,1 @@
+ID1	ID2	N	N_IBS0	N_IBS1	N_IBS2	Concord	HomConc	HetConc

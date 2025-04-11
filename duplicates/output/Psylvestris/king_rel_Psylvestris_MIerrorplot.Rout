@@ -1,0 +1,52 @@
+
+R version 4.4.0 (2024-04-24) -- "Puppy Cup"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> ## king_rel_Psylvestris_MIerrorplot.R for KING MI error plot, by Wei-Min Chen and Zhennan Zhu
+> rm(list=ls(all=TRUE))
+> library(kinship2)
+Loading required package: Matrix
+Loading required package: quadprog
+> library(igraph)
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+> ped <- read.table(file="king_rel_Psylvestrissplitped.txt", stringsAsFactors=FALSE)[,c(1,2,5,6,7,8,9)]
+> ped$V8[ped$V8==-9 | ped$V8==0 | ped$V8==1] <- 0
+> ped$V8[ped$V8==2] <- 1
+> colnames(ped) <- c("FID", "ID", "FA", "MO", "Sex", "Affected", "Status")
+> data <- read.table("king_rel_Psylvestris.kin",header = TRUE, stringsAsFactors = FALSE)
+> mi.err <- data[data[, "Error"]==1, "FID" ]
+> Inf.color <- c("purple", "red", "green", "blue", "yellow", NA)
+> Inf.type <- c("Dup/MZ", "PO", "FS", "2nd", "3rd")
+> data.fam <- merge(data, ped, by.x = c("FID", "ID1"), by.y = c("FID", "ID"))
+> data.all <- merge(data.fam, ped, by.x = c("FID", "ID2"), by.y = c("FID", "ID"))[, c("FID", "ID1", "ID2", "Sex.x", "Sex.y", "InfType", "Error")]
+Error in `[.data.frame`(merge(data.fam, ped, by.x = c("FID", "ID2"), by.y = c("FID",  : 
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
