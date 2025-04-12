@@ -1,0 +1,19 @@
+# BUSCO version is: 5.7.1 
+# The lineage dataset is: embryophyta_odb10 (Creation date: 2024-01-08, number of genomes: 50, number of BUSCOs: 1614)
+# Summarized benchmarking in BUSCO notation for file /users/mcevoysu/scratch/data/Strominalis/Spohua.protein.fa
+# BUSCO was run in mode: proteins
+
+	***** Results: *****
+
+	C:96.6%[S:57.4%,D:39.2%],F:1.0%,M:2.4%,n:1614	   
+	1558	Complete BUSCOs (C)			   
+	926	Complete and single-copy BUSCOs (S)	   
+	632	Complete and duplicated BUSCOs (D)	   
+	16	Fragmented BUSCOs (F)			   
+	40	Missing BUSCOs (M)			   
+	1614	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	python: sys.version_info(major=3, minor=7, micro=12, releaselevel='final', serial=0)
+	busco: 5.7.1
