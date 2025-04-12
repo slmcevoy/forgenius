@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Qrob_PM1N 
+# contigs (>= 0 bp)         550       
+# contigs (>= 1000 bp)      550       
+# contigs (>= 5000 bp)      523       
+# contigs (>= 10000 bp)     454       
+# contigs (>= 25000 bp)     346       
+# contigs (>= 50000 bp)     277       
+Total length (>= 0 bp)      814368469 
+Total length (>= 1000 bp)   814368469 
+Total length (>= 5000 bp)   814274626 
+Total length (>= 10000 bp)  813772624 
+Total length (>= 25000 bp)  812108737 
+Total length (>= 50000 bp)  809624519 
+# contigs                   541       
+Largest contig              115639695 
+Total length                814346829 
+GC (%)                      35.65     
+N50                         55068941  
+N90                         1825287   
+auN                         57995059.0
+L50                         6         
+L90                         19        
+# N's per 100 kbp           2955.84   

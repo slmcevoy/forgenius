@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    FRAX_001_PL_genomic
+# contigs (>= 0 bp)         421                
+# contigs (>= 1000 bp)      421                
+# contigs (>= 5000 bp)      396                
+# contigs (>= 10000 bp)     336                
+# contigs (>= 25000 bp)     166                
+# contigs (>= 50000 bp)     82                 
+Total length (>= 0 bp)      807607624          
+Total length (>= 1000 bp)   807607624          
+Total length (>= 5000 bp)   807513292          
+Total length (>= 10000 bp)  807059333          
+Total length (>= 25000 bp)  804132885          
+Total length (>= 50000 bp)  801171407          
+# contigs                   415                
+Largest contig              57264378           
+Total length                807592346          
+GC (%)                      34.42              
+N50                         35973953           
+N90                         26668775           
+auN                         36657057.2         
+L50                         10                 
+L90                         20                 
+# N's per 100 kbp           24.67              

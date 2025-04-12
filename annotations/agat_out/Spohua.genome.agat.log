@@ -1,0 +1,181 @@
+                            03/05/2025 at 12h32m43s                             
+
+
+ ------------------------------------------------------------------------------
+|   Another GFF Analysis Toolkit (AGAT) - Version: v1.4.0                      |
+|   https://github.com/NBISweden/AGAT                                          |
+|   National Bioinformatics Infrastructure Sweden (NBIS) - www.nbis.se         |
+ ------------------------------------------------------------------------------
+                                        
+                                       
+                          ------ Start parsing ------                           
+-------------------------- parse options and metadata --------------------------
+=> Accessing the feature_levels YAML file
+Using standard /PUHTI_TYKKY_RtIbA7a/miniconda/envs/env1/lib/perl5/site_perl/auto/share/dist/AGAT/feature_levels.yaml file
+=> Attribute used to group features when no Parent/ID relationship exists (i.e common tag):
+	* locus_tag
+	* gene_id
+=> merge_loci option deactivated
+=> Machine information:
+	This script is being run by perl v5.32.1
+	Bioperl location being used: /PUHTI_TYKKY_RtIbA7a/miniconda/envs/env1/lib/perl5/site_perl/Bio/
+	Operating system being used: linux 
+=> Accessing Ontology
+	No ontology accessible from the gff file header!
+	We use the SOFA ontology distributed with AGAT:
+		/PUHTI_TYKKY_RtIbA7a/miniconda/envs/env1/lib/perl5/site_perl/auto/share/dist/AGAT/so.obo
+	Read ontology /PUHTI_TYKKY_RtIbA7a/miniconda/envs/env1/lib/perl5/site_perl/auto/share/dist/AGAT/so.obo:
+		4 root terms, and 2596 total terms, and 1516 leaf terms
+	Filtering ontology:
+The feature type (3rd column) is constrained to be either a term from the Sequence Ontology or an SO accession number. The latter alternative is distinguished using the syntax SO:000000. In either case, it must be sequence_feature (SO:0000110) or an is_a child of it.
+We filter the ontology to apply this rule.		We found 1861 terms that are sequence_feature or is_a child of it.
+--------------------------------- parsing file ---------------------------------
+=> Number of line in file: 640287
+=> Number of comment lines: 0
+=> Fasta included: No
+=> Number of features lines: 640287
+=> Number of feature type (3rd column): 6
+	* Level1: 1 => gene
+	* level2: 1 => mRNA
+	* level3: 4 => CDS three_prime_UTR exon five_prime_UTR
+	* unknown: 0 => 
+=> Version of the Bioperl GFF parser selected by AGAT: 3
+
+                 ------ End parsing (done in 103 second) ------                 
+
+
+                           ------ Start checks ------                           
+---------------------------- Check1: feature types -----------------------------
+----------------------------------- ontology -----------------------------------
+All feature types in agreement with the Ontology.
+------------------------------------- agat -------------------------------------
+AGAT can deal with all the encountered feature types (3rd column)
+------------------------------ done in 0 seconds -------------------------------
+
+------------------------------ Check2: duplicates ------------------------------
+None found
+------------------------------ done in 0 seconds -------------------------------
+
+-------------------------- Check3: sequential bucket ---------------------------
+Nothing to check as sequential bucket!
+------------------------------ done in 0 seconds -------------------------------
+
+--------------------------- Check4: l2 linked to l3 ----------------------------
+No problem found
+------------------------------ done in 0 seconds -------------------------------
+
+--------------------------- Check5: l1 linked to l2 ----------------------------
+No Parent feature found for contig000041l+G000010.1. We create one: contig000041l	AGAT	gene	370459	371154	.	-	.	ID contig000041lG000010
+No Parent feature found for contig000041l+G000020.1. We create one: contig000041l	AGAT	gene	708900	709595	.	-	.	ID contig000041lG000020
+2 cases fixed where L2 features have parent features missing
+------------------------------ done in 0 seconds -------------------------------
+
+--------------------------- Check6: remove orphan l1 ---------------------------
+We remove only those not supposed to be orphan
+removing Chr01	EVM	gene	16154206	16182377	.	-	.	ID Sp01G008460
+removing Chr09	EVM	gene	19016326	19018283	.	-	.	ID Sp09G018430
+removing Chr08	EVM	gene	27294070	27308473	.	-	.	ID Sp08G019390
+removing Chr16	EVM	gene	7362482	7363289	.	-	0	ID Sp16G008950
+removing Chr06	EVM	gene	28023939	28024883	.	+	.	ID Sp06G016670
+removing Chr16	EVM	gene	22745165	22745587	.	+	.	ID Sp16G020670
+removing Chr02	EVM	gene	2834191	2840384	.	-	.	ID Sp02G003530
+removing Chr07	EVM	gene	15489000	15490642	.	-	.	ID Sp07G011000
+removing Chr10	EVM	gene	31465233	31468451	.	+	.	ID Sp10G019230
+removing Chr05	EVM	gene	9450810	9454475	.	-	.	ID Sp05G006290
+removing Chr14	EVM	gene	22120746	22128355	.	-	.	ID Sp14G013500
+removing Chr10	EVM	gene	2920949	2922443	.	+	.	ID Sp10G001930
+removing contig000041l	EVM	gene	370459	371154	.	-	.	ID "contig000041l+G000010" 
+removing Chr15	EVM	gene	45273147	45274833	.	-	.	ID Sp15G035490
+removing Chr09	EVM	gene	12087861	12088190	.	-	.	ID Sp09G013300
+removing Chr17	EVM	gene	17319566	17320700	.	-	.	ID Sp17G015500
+removing Chr08	EVM	gene	31229588	31237362	.	+	.	ID Sp08G022930
+removing contig000041l	EVM	gene	708900	709595	.	-	.	ID "contig000041l+G000020" 
+removing Chr12	EVM	gene	28759339	28762642	.	-	.	ID Sp12G020580
+removing Chr16	EVM	gene	28857030	28880038	.	+	.	ID Sp16G022400
+removing Chr07	EVM	gene	31988603	31990472	.	+	.	ID Sp07G022220
+removing Chr13	EVM	gene	9527004	9528664	.	+	.	ID Sp13G010880
+removing Chr11	EVM	gene	6580084	6581550	.	+	.	ID Sp11G005980
+removing Chr05	EVM	gene	37839612	37839920	.	+	.	ID Sp05G025230
+removing Chr05	EVM	gene	19905863	19908148	.	+	.	ID Sp05G010120
+removing Chr09	EVM	gene	30581700	30582316	.	-	.	ID Sp09G023090
+removing Chr06	EVM	gene	27705427	27705786	.	-	.	ID Sp06G016230
+removing Chr02	EVM	gene	34385617	34388226	.	-	.	ID Sp02G024680
+28 cases removed where L1 features do not have children (while they are suposed to have children).
+------------------------------ done in 0 seconds -------------------------------
+
+------------------------- Check7: all level3 locations -------------------------
+------------------------------ done in 12 seconds ------------------------------
+
+------------------------------ Check8: check cds -------------------------------
+No problem found
+------------------------------ done in 0 seconds -------------------------------
+
+----------------------------- Check9: check exons ------------------------------
+Modify the exon agat-exon-23109 LEFT extremity for sp02g021040.1! From 29271480 to 29271375
+Modify the exon agat-exon-23106 RIGHT extremity for sp02g021040.1! From 29276853 to 29277064
+Modify the exon agat-exon-32923 LEFT extremity for sp03g011580.1! From 13388313 to 13387442
+Modify the exon agat-exon-32927 RIGHT extremity for sp03g011580.1! From 13390254 to 13391956
+Modify the exon agat-exon-48599 LEFT extremity for sp04g013840.1! From 20869815 to 20866679
+Modify the exon agat-exon-48598 RIGHT extremity for sp04g013840.1! From 20871580 to 20872557
+Modify the exon agat-exon-72232 LEFT extremity for sp06g000440.1! From 474880 to 473781
+Modify the exon agat-exon-72233 RIGHT extremity for sp06g000440.1! From 475416 to 475470
+Modify the exon agat-exon-90701 LEFT extremity for sp07g013310.1! From 21314028 to 21313956
+Modify the exon agat-exon-90701 RIGHT extremity for sp07g013310.1! From 21314612 to 21315110
+Modify the exon agat-exon-146465 LEFT extremity for sp11g006400.1! From 6951623 to 6951397
+Modify the exon agat-exon-146465 RIGHT extremity for sp11g006400.1! From 6951997 to 6955016
+Modify the exon agat-exon-248250 LEFT extremity for sp17g024420.1! From 32520358 to 32520169
+Modify the exon agat-exon-248250 RIGHT extremity for sp17g024420.1! From 32520669 to 32523551
+No exons created
+14 exons locations modified that were wrong
+No supernumerary exons removed
+No level2 locations modified
+------------------------------ done in 8 seconds -------------------------------
+
+----------------------------- Check10: check utrs ------------------------------
+Create one UTR for sp02g021040.1
+:Chr02	AGAT	five_prime_UTR	29271375	29271479	.	+	.	ID "agat-five_prime_utr-19899"  ; Parent "Sp02G021040.1" 
+Create one UTR for sp02g021040.1
+:Chr02	AGAT	three_prime_UTR	29276854	29277064	.	+	.	ID "agat-three_prime_utr-20875"  ; Parent "Sp02G021040.1" 
+Create one UTR for sp03g011580.1
+:Chr03	AGAT	three_prime_UTR	13387442	13388312	.	-	.	ID "agat-three_prime_utr-20876"  ; Parent "Sp03G011580.1" 
+Create one UTR for sp03g011580.1
+:Chr03	AGAT	five_prime_UTR	13390255	13391956	.	-	.	ID "agat-five_prime_utr-19900"  ; Parent "Sp03G011580.1" 
+Create one UTR for sp04g013840.1
+:Chr04	AGAT	five_prime_UTR	20866679	20869814	.	+	.	ID "agat-five_prime_utr-19901"  ; Parent "Sp04G013840.1" 
+Create one UTR for sp04g013840.1
+:Chr04	AGAT	three_prime_UTR	20871581	20872557	.	+	.	ID "agat-three_prime_utr-20877"  ; Parent "Sp04G013840.1" 
+Create one UTR for sp06g000440.1
+:Chr06	AGAT	five_prime_UTR	473781	474879	.	+	.	ID "agat-five_prime_utr-19902"  ; Parent "Sp06G000440.1" 
+Create one UTR for sp06g000440.1
+:Chr06	AGAT	three_prime_UTR	475417	475470	.	+	.	ID "agat-three_prime_utr-20878"  ; Parent "Sp06G000440.1" 
+Create one UTR for sp07g013310.1
+:Chr07	AGAT	three_prime_UTR	21313956	21314027	.	-	.	ID "agat-three_prime_utr-20879"  ; Parent "Sp07G013310.1" 
+Create one UTR for sp07g013310.1
+:Chr07	AGAT	five_prime_UTR	21314613	21315110	.	-	.	ID "agat-five_prime_utr-19903"  ; Parent "Sp07G013310.1" 
+Create one UTR for sp11g006400.1
+:Chr11	AGAT	three_prime_UTR	6951397	6951622	.	-	.	ID "agat-three_prime_utr-20880"  ; Parent "Sp11G006400.1" 
+Create one UTR for sp11g006400.1
+:Chr11	AGAT	five_prime_UTR	6951998	6955016	.	-	.	ID "agat-five_prime_utr-19904"  ; Parent "Sp11G006400.1" 
+Create one UTR for sp17g024420.1
+:Chr17	AGAT	three_prime_UTR	32520169	32520357	.	-	.	ID "agat-three_prime_utr-20881"  ; Parent "Sp17G024420.1" 
+Create one UTR for sp17g024420.1
+:Chr17	AGAT	five_prime_UTR	32520670	32523551	.	-	.	ID "agat-five_prime_utr-19905"  ; Parent "Sp17G024420.1" 
+14 UTRs created that were missing
+No UTRs locations modified
+No supernumerary UTRs removed
+------------------------------ done in 5 seconds -------------------------------
+
+------------------------ Check11: all level2 locations -------------------------
+No problem found
+------------------------------ done in 8 seconds -------------------------------
+
+------------------------ Check12: all level1 locations -------------------------
+We fixed 8255 wrong level1 location cases
+------------------------------ done in 0 seconds -------------------------------
+
+---------------------- Check13: remove identical isoforms ----------------------
+None found
+------------------------------ done in 1 seconds -------------------------------
+                  ------ End checks (done in 34 second) ------                  
+
+

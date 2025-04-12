@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Spohua.genome
+# contigs (>= 0 bp)         404          
+# contigs (>= 1000 bp)      404          
+# contigs (>= 5000 bp)      404          
+# contigs (>= 10000 bp)     404          
+# contigs (>= 25000 bp)     403          
+# contigs (>= 50000 bp)     199          
+Total length (>= 0 bp)      660101906    
+Total length (>= 1000 bp)   660101906    
+Total length (>= 5000 bp)   660101906    
+Total length (>= 10000 bp)  660101906    
+Total length (>= 25000 bp)  660087866    
+Total length (>= 50000 bp)  651891594    
+# contigs                   404          
+Largest contig              49422898     
+Total length                660101906    
+GC (%)                      38.22        
+N50                         36685546     
+N90                         28204096     
+auN                         35565873.8   
+L50                         8            
+L90                         16           
+# N's per 100 kbp           0.33         

@@ -1,0 +1,19 @@
+# BUSCO version is: 5.7.1 
+# The lineage dataset is: embryophyta_odb10 (Creation date: 2024-01-08, number of genomes: 50, number of BUSCOs: 1614)
+# Summarized benchmarking in BUSCO notation for file /users/mcevoysu/scratch/data/annotations/tchinensis/GCA_019776745.2_Ta-2021_protein.faa
+# BUSCO was run in mode: proteins
+
+	***** Results: *****
+
+	C:50.0%[S:46.2%,D:3.8%],F:22.7%,M:27.3%,n:1614	   
+	807	Complete BUSCOs (C)			   
+	745	Complete and single-copy BUSCOs (S)	   
+	62	Complete and duplicated BUSCOs (D)	   
+	367	Fragmented BUSCOs (F)			   
+	440	Missing BUSCOs (M)			   
+	1614	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	python: sys.version_info(major=3, minor=7, micro=12, releaselevel='final', serial=0)
+	busco: 5.7.1

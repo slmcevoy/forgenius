@@ -1,0 +1,19 @@
+# BUSCO version is: 5.7.1 
+# The lineage dataset is: embryophyta_odb10 (Creation date: 2024-01-08, number of genomes: 50, number of BUSCOs: 1614)
+# Summarized benchmarking in BUSCO notation for file /users/mcevoysu/scratch/data/annotations/ptabuliformis/P.tabuliformis_V1.0.gene.final_v2_contig_level.faa
+# BUSCO was run in mode: proteins
+
+	***** Results: *****
+
+	C:83.8%[S:35.7%,D:48.1%],F:8.4%,M:7.8%,n:1614	   
+	1353	Complete BUSCOs (C)			   
+	577	Complete and single-copy BUSCOs (S)	   
+	776	Complete and duplicated BUSCOs (D)	   
+	136	Fragmented BUSCOs (F)			   
+	125	Missing BUSCOs (M)			   
+	1614	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	python: sys.version_info(major=3, minor=7, micro=12, releaselevel='final', serial=0)
+	busco: 5.7.1

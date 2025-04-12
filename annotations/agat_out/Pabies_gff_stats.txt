@@ -1,0 +1,71 @@
+--------------------------------------------------------------------------------
+
+------------------------------------- mrna -------------------------------------
+Number of gene                               178049
+Number of mrna                               178049
+Number of cds                                178049
+Number of exon                               178049
+Number of exon in cds                        178049
+Number gene overlapping                      0
+Number of single exon gene                   178049
+Number of single exon mrna                   178049
+mean mrnas per gene                          1.0
+mean cdss per mrna                           1.0
+mean exons per mrna                          1.0
+mean exons per cds                           1.0
+Total gene length (bp)                       51316255
+Total mrna length (bp)                       51316255
+Total cds length (bp)                        51316255
+Total exon length (bp)                       51316255
+mean gene length (bp)                        288
+mean mrna length (bp)                        288
+mean cds length (bp)                         288
+mean exon length (bp)                        288
+mean cds piece length (bp)                   288
+Longest gene (bp)                            6069
+Longest mrna (bp)                            6069
+Longest cds (bp)                             6069
+Longest exon (bp)                            6069
+Longest cds piece (bp)                       6069
+Shortest gene (bp)                           3
+Shortest mrna (bp)                           3
+Shortest cds piece (bp)                      3
+
+------------------------------------- rna --------------------------------------
+Number of gene                               70736
+Number of rna                                70736
+Number of exon                               178049
+Number of intron                             107313
+Number of intron in exon                     107313
+Number of intron in intron                   68635
+Number gene overlapping                      0
+Number of single exon gene                   32058
+Number of single exon rna                    32058
+mean rnas per gene                           1.0
+mean exons per rna                           2.5
+mean introns per rna                         1.5
+mean introns in exons per rna                1.5
+mean introns in introns per rna              1.0
+Total gene length (bp)                       158515791
+Total rna length (bp)                        158515791
+Total exon length (bp)                       51316255
+Total intron length (bp)                     107199536
+Total intron length per exon (bp)            107199536
+Total intron length per intron (bp)          12654112
+mean gene length (bp)                        2240
+mean rna length (bp)                         2240
+mean exon length (bp)                        288
+mean intron length (bp)                      998
+mean intron in exon length (bp)              998
+mean intron in intron length (bp)            184
+Longest gene (bp)                            94346
+Longest rna (bp)                             94346
+Longest exon (bp)                            6069
+Longest intron (bp)                          68269
+Longest intron into exon part (bp)           68269
+Longest intron into intron part (bp)         5253
+Shortest gene (bp)                           150
+Shortest rna (bp)                            150
+Shortest intron into exon part (bp)          34
+Shortest intron into intron part (bp)        4
+

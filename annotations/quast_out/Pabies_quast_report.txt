@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Pabies1.0-genome
+# contigs (>= 0 bp)         10253694        
+# contigs (>= 1000 bp)      1970461         
+# contigs (>= 5000 bp)      437348          
+# contigs (>= 10000 bp)     208699          
+# contigs (>= 25000 bp)     59334           
+# contigs (>= 50000 bp)     9864            
+Total length (>= 0 bp)      12301351591     
+Total length (>= 1000 bp)   9455649713      
+Total length (>= 5000 bp)   6231162000      
+Total length (>= 10000 bp)  4608832595      
+Total length (>= 25000 bp)  2337265445      
+Total length (>= 50000 bp)  651113763       
+# contigs                   712013          
+Largest contig              208095          
+Total length                7284170106      
+GC (%)                      37.30           
+N50                         14746           
+N90                         4265            
+auN                         21737.4         
+L50                         128332          
+L90                         507825          
+# N's per 100 kbp           3584.13         

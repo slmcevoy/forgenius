@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Ptab_masked
+# contigs (>= 0 bp)         22739      
+# contigs (>= 1000 bp)      22739      
+# contigs (>= 5000 bp)      22667      
+# contigs (>= 10000 bp)     22640      
+# contigs (>= 25000 bp)     22555      
+# contigs (>= 50000 bp)     22382      
+Total length (>= 0 bp)      25421342128
+Total length (>= 1000 bp)   25421342128
+Total length (>= 5000 bp)   25421125922
+Total length (>= 10000 bp)  25420935528
+Total length (>= 25000 bp)  25419463448
+Total length (>= 50000 bp)  25412407715
+# contigs                   22702      
+Largest contig              49421087   
+Total length                25421260120
+GC (%)                      37.86      
+N50                         2601037    
+N90                         525439     
+auN                         3680121.7  
+L50                         2712       
+L90                         10821      
+# N's per 100 kbp           29888.26   

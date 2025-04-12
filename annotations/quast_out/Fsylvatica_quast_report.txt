@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Bhaga_genome
+# contigs (>= 0 bp)         169         
+# contigs (>= 1000 bp)      169         
+# contigs (>= 5000 bp)      161         
+# contigs (>= 10000 bp)     127         
+# contigs (>= 25000 bp)     44          
+# contigs (>= 50000 bp)     33          
+Total length (>= 0 bp)      541007641   
+Total length (>= 1000 bp)   541007641   
+Total length (>= 5000 bp)   540981502   
+Total length (>= 10000 bp)  540720152   
+Total length (>= 25000 bp)  539431984   
+Total length (>= 50000 bp)  539097267   
+# contigs                   166         
+Largest contig              73970959    
+Total length                541001145   
+GC (%)                      35.65       
+N50                         46564878    
+N90                         32559338    
+auN                         47046909.9  
+L50                         5           
+L90                         11          
+# N's per 100 kbp           117.87      

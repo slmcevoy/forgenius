@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Ilex_genome
+# contigs (>= 0 bp)         13         
+# contigs (>= 1000 bp)      13         
+# contigs (>= 5000 bp)      13         
+# contigs (>= 10000 bp)     13         
+# contigs (>= 25000 bp)     13         
+# contigs (>= 50000 bp)     13         
+Total length (>= 0 bp)      842282118  
+Total length (>= 1000 bp)   842282118  
+Total length (>= 5000 bp)   842282118  
+Total length (>= 10000 bp)  842282118  
+Total length (>= 25000 bp)  842282118  
+Total length (>= 50000 bp)  842282118  
+# contigs                   13         
+Largest contig              106094171  
+Total length                842282118  
+GC (%)                      35.98      
+N50                         70239515   
+N90                         52929259   
+auN                         73992501.7 
+L50                         5          
+L90                         11         
+# N's per 100 kbp           6.14       

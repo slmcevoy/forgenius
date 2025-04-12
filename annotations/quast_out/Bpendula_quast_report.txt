@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Betula_pendula_subsp_pendula
+# contigs (>= 0 bp)         5642                        
+# contigs (>= 1000 bp)      5642                        
+# contigs (>= 5000 bp)      4357                        
+# contigs (>= 10000 bp)     3556                        
+# contigs (>= 25000 bp)     2565                        
+# contigs (>= 50000 bp)     1883                        
+Total length (>= 0 bp)      435173052                   
+Total length (>= 1000 bp)   435173052                   
+Total length (>= 5000 bp)   431605520                   
+Total length (>= 10000 bp)  425616891                   
+Total length (>= 25000 bp)  409820939                   
+Total length (>= 50000 bp)  385283219                   
+# contigs                   4828                        
+Largest contig              3196900                     
+Total length                433421170                   
+GC (%)                      35.72                       
+N50                         240667                      
+N90                         44841                       
+auN                         448430.0                    
+L50                         423                         
+L90                         1985                        
+# N's per 100 kbp           2315.34                     
