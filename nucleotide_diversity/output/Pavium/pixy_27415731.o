@@ -1,0 +1,262 @@
+Three: 
+Two _V1
+BED: /users/mcevoysu/scratch/data/Pavium/pavium_regions.bed
+VCF: /users/mcevoysu/scratch/output/vcf_filtering/Pavium/Pavium_SPET_allsites_filt_V1.vcf.gz
+POP: /users/mcevoysu/scratch/data/Pavium/Pavium_sample_list_filtered_rmdups.txt
+[pixy] pixy 1.2.7.beta1
+[pixy] See documentation at https://pixy.readthedocs.io/en/latest/
+
+[pixy] Validating VCF and input parameters...
+[pixy] Checking write access...OK
+[pixy] Checking CPU configuration...OK
+[pixy] Checking for invariant sites...OK
+[pixy] Checking chromosome data...OK
+[pixy] Checking intervals/sites...WARNING
+[pixy] WARNING: the following chromosomes in the BED file do not occur in the VCF and will be ignored: ['contig_28', 'contig_37']
+[pixy] Checking sample data...OK
+[pixy] All initial checks past!
+
+[pixy] Preparing for calculation of summary statistics: pi, dxy, fst
+[pixy] Using Weir and Cockerham (1984)'s estimator of FST.
+[pixy] Data set contains 13 population(s), 8 chromosome(s), and 262 sample(s)
+[pixy] Windows sourced from: /users/mcevoysu/scratch/data/Pavium/pavium_regions.bed
+
+[pixy] Started calculations at 13:56:12 on 2025-04-04
+[pixy] Using 16 out of 40 available CPU cores
+
+[pixy] Processing chromosome/contig chr_7...
+[pixy] Processing chromosome/contig chr_5...
+[pixy] Processing chromosome/contig chr_3...
+[pixy] Processing chromosome/contig chr_2...
+[pixy] Processing chromosome/contig chr_8...
+[pixy] Processing chromosome/contig chr_6...
+[pixy] Processing chromosome/contig chr_1...
+[pixy] Processing chromosome/contig chr_4...
+
+[pixy] All calculations complete at 13:59:56 on 2025-04-04
+[pixy] Time elapsed: 00:03:43
+[pixy] Output files written to: /users/mcevoysu/scratch/output/pixy/Pavium/
+
+[pixy] NOTE: There are pixy temp files in /users/mcevoysu/scratch/output/pixy/Pavium/
+[pixy] If these are not actively being used (e.g. by another running pixy process), they can be safely deleted.
+
+[pixy] If you use pixy in your research, please cite the following paper:
+[pixy] Korunes, KL and K Samuk. pixy: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data. Mol Ecol Resour. 2021 Jan 16. doi: 10.1111/1755-0998.13326.
+Three: _random
+Two _V1
+BED: /users/mcevoysu/scratch/data/Pavium/pavium_random_regions.bed
+VCF: /users/mcevoysu/scratch/output/vcf_filtering/Pavium/Pavium_SPET_allsites_filt_random_V1.vcf.gz
+POP: /users/mcevoysu/scratch/data/Pavium/Pavium_sample_list_filtered_random_rmdups.txt
+[pixy] pixy 1.2.7.beta1
+[pixy] See documentation at https://pixy.readthedocs.io/en/latest/
+
+[pixy] Validating VCF and input parameters...
+[pixy] Checking write access...OK
+[pixy] Checking CPU configuration...OK
+[pixy] Checking for invariant sites...OK
+[pixy] Checking chromosome data...OK
+[pixy] Checking intervals/sites...WARNING
+[pixy] WARNING: the following chromosomes in the BED file do not occur in the VCF and will be ignored: ['contig_28', 'contig_37']
+[pixy] Checking sample data...OK
+[pixy] All initial checks past!
+
+[pixy] Preparing for calculation of summary statistics: pi, dxy, fst
+[pixy] Using Weir and Cockerham (1984)'s estimator of FST.
+[pixy] Data set contains 13 population(s), 8 chromosome(s), and 262 sample(s)
+[pixy] Windows sourced from: /users/mcevoysu/scratch/data/Pavium/pavium_random_regions.bed
+
+[pixy] Started calculations at 14:00:07 on 2025-04-04
+[pixy] Using 16 out of 40 available CPU cores
+
+[pixy] Processing chromosome/contig chr_1...
+[pixy] Processing chromosome/contig chr_2...
+[pixy] Processing chromosome/contig chr_4...
+[pixy] Processing chromosome/contig chr_5...
+[pixy] Processing chromosome/contig chr_3...
+[pixy] Processing chromosome/contig chr_6...
+[pixy] Processing chromosome/contig chr_7...
+[pixy] Processing chromosome/contig chr_8...
+
+[pixy] All calculations complete at 14:03:06 on 2025-04-04
+[pixy] Time elapsed: 00:02:58
+[pixy] Output files written to: /users/mcevoysu/scratch/output/pixy/Pavium/
+
+[pixy] NOTE: There are pixy temp files in /users/mcevoysu/scratch/output/pixy/Pavium/
+[pixy] If these are not actively being used (e.g. by another running pixy process), they can be safely deleted.
+
+[pixy] If you use pixy in your research, please cite the following paper:
+[pixy] Korunes, KL and K Samuk. pixy: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data. Mol Ecol Resour. 2021 Jan 16. doi: 10.1111/1755-0998.13326.
+Three: _target
+Two _V1
+BED: /users/mcevoysu/scratch/data/Pavium/pavium_target_regions.bed
+VCF: /users/mcevoysu/scratch/output/vcf_filtering/Pavium/Pavium_SPET_allsites_filt_target_V1.vcf.gz
+POP: /users/mcevoysu/scratch/data/Pavium/Pavium_sample_list_filtered_target_rmdups.txt
+[pixy] pixy 1.2.7.beta1
+[pixy] See documentation at https://pixy.readthedocs.io/en/latest/
+
+[pixy] Validating VCF and input parameters...
+[pixy] Checking write access...OK
+[pixy] Checking CPU configuration...OK
+[pixy] Checking for invariant sites...OK
+[pixy] Checking chromosome data...OK
+[pixy] Checking intervals/sites...OK
+[pixy] Checking sample data...OK
+[pixy] All initial checks past!
+
+[pixy] Preparing for calculation of summary statistics: pi, dxy, fst
+[pixy] Using Weir and Cockerham (1984)'s estimator of FST.
+[pixy] Data set contains 13 population(s), 8 chromosome(s), and 262 sample(s)
+[pixy] Windows sourced from: /users/mcevoysu/scratch/data/Pavium/pavium_target_regions.bed
+
+[pixy] Started calculations at 14:03:10 on 2025-04-04
+[pixy] Using 16 out of 40 available CPU cores
+
+[pixy] Processing chromosome/contig chr_6...
+[pixy] Processing chromosome/contig chr_8...
+[pixy] Processing chromosome/contig chr_3...
+[pixy] Processing chromosome/contig chr_4...
+[pixy] Processing chromosome/contig chr_5...
+[pixy] Processing chromosome/contig chr_2...
+[pixy] Processing chromosome/contig chr_7...
+[pixy] Processing chromosome/contig chr_1...
+
+[pixy] All calculations complete at 14:04:36 on 2025-04-04
+[pixy] Time elapsed: 00:01:26
+[pixy] Output files written to: /users/mcevoysu/scratch/output/pixy/Pavium/
+
+[pixy] NOTE: There are pixy temp files in /users/mcevoysu/scratch/output/pixy/Pavium/
+[pixy] If these are not actively being used (e.g. by another running pixy process), they can be safely deleted.
+
+[pixy] If you use pixy in your research, please cite the following paper:
+[pixy] Korunes, KL and K Samuk. pixy: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data. Mol Ecol Resour. 2021 Jan 16. doi: 10.1111/1755-0998.13326.
+Three: 
+Two _V2
+BED: /users/mcevoysu/scratch/data/Pavium/pavium_regions.bed
+VCF: /users/mcevoysu/scratch/output/vcf_filtering/Pavium/Pavium_SPET_allsites_filt_V2.vcf.gz
+POP: /users/mcevoysu/scratch/data/Pavium/Pavium_sample_list_filtered_rmhybrids.txt
+[pixy] pixy 1.2.7.beta1
+[pixy] See documentation at https://pixy.readthedocs.io/en/latest/
+
+[pixy] Validating VCF and input parameters...
+[pixy] Checking write access...OK
+[pixy] Checking CPU configuration...OK
+[pixy] Checking for invariant sites...OK
+[pixy] Checking chromosome data...OK
+[pixy] Checking intervals/sites...WARNING
+[pixy] WARNING: the following chromosomes in the BED file do not occur in the VCF and will be ignored: ['contig_37', 'contig_28']
+[pixy] Checking sample data...OK
+[pixy] All initial checks past!
+
+[pixy] Preparing for calculation of summary statistics: pi, dxy, fst
+[pixy] Using Weir and Cockerham (1984)'s estimator of FST.
+[pixy] Data set contains 13 population(s), 8 chromosome(s), and 258 sample(s)
+[pixy] Windows sourced from: /users/mcevoysu/scratch/data/Pavium/pavium_regions.bed
+
+[pixy] Started calculations at 14:05:01 on 2025-04-04
+[pixy] Using 16 out of 40 available CPU cores
+
+[pixy] Processing chromosome/contig chr_1...
+[pixy] Processing chromosome/contig chr_7...
+[pixy] Processing chromosome/contig chr_6...
+[pixy] Processing chromosome/contig chr_5...
+[pixy] Processing chromosome/contig chr_8...
+[pixy] Processing chromosome/contig chr_3...
+[pixy] Processing chromosome/contig chr_2...
+[pixy] Processing chromosome/contig chr_4...
+
+[pixy] All calculations complete at 14:08:31 on 2025-04-04
+[pixy] Time elapsed: 00:03:29
+[pixy] Output files written to: /users/mcevoysu/scratch/output/pixy/Pavium/
+
+[pixy] NOTE: There are pixy temp files in /users/mcevoysu/scratch/output/pixy/Pavium/
+[pixy] If these are not actively being used (e.g. by another running pixy process), they can be safely deleted.
+
+[pixy] If you use pixy in your research, please cite the following paper:
+[pixy] Korunes, KL and K Samuk. pixy: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data. Mol Ecol Resour. 2021 Jan 16. doi: 10.1111/1755-0998.13326.
+Three: _random
+Two _V2
+BED: /users/mcevoysu/scratch/data/Pavium/pavium_random_regions.bed
+VCF: /users/mcevoysu/scratch/output/vcf_filtering/Pavium/Pavium_SPET_allsites_filt_random_V2.vcf.gz
+POP: /users/mcevoysu/scratch/data/Pavium/Pavium_sample_list_filtered_random_rmhybrids.txt
+[pixy] pixy 1.2.7.beta1
+[pixy] See documentation at https://pixy.readthedocs.io/en/latest/
+
+[pixy] Validating VCF and input parameters...
+[pixy] Checking write access...OK
+[pixy] Checking CPU configuration...OK
+[pixy] Checking for invariant sites...OK
+[pixy] Checking chromosome data...OK
+[pixy] Checking intervals/sites...WARNING
+[pixy] WARNING: the following chromosomes in the BED file do not occur in the VCF and will be ignored: ['contig_37', 'contig_28']
+[pixy] Checking sample data...OK
+[pixy] All initial checks past!
+
+[pixy] Preparing for calculation of summary statistics: pi, dxy, fst
+[pixy] Using Weir and Cockerham (1984)'s estimator of FST.
+[pixy] Data set contains 13 population(s), 8 chromosome(s), and 258 sample(s)
+[pixy] Windows sourced from: /users/mcevoysu/scratch/data/Pavium/pavium_random_regions.bed
+
+[pixy] Started calculations at 14:08:35 on 2025-04-04
+[pixy] Using 16 out of 40 available CPU cores
+
+[pixy] Processing chromosome/contig chr_5...
+[pixy] Processing chromosome/contig chr_6...
+[pixy] Processing chromosome/contig chr_3...
+[pixy] Processing chromosome/contig chr_4...
+[pixy] Processing chromosome/contig chr_7...
+[pixy] Processing chromosome/contig chr_2...
+[pixy] Processing chromosome/contig chr_8...
+[pixy] Processing chromosome/contig chr_1...
+
+[pixy] All calculations complete at 14:11:29 on 2025-04-04
+[pixy] Time elapsed: 00:02:53
+[pixy] Output files written to: /users/mcevoysu/scratch/output/pixy/Pavium/
+
+[pixy] NOTE: There are pixy temp files in /users/mcevoysu/scratch/output/pixy/Pavium/
+[pixy] If these are not actively being used (e.g. by another running pixy process), they can be safely deleted.
+
+[pixy] If you use pixy in your research, please cite the following paper:
+[pixy] Korunes, KL and K Samuk. pixy: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data. Mol Ecol Resour. 2021 Jan 16. doi: 10.1111/1755-0998.13326.
+Three: _target
+Two _V2
+BED: /users/mcevoysu/scratch/data/Pavium/pavium_target_regions.bed
+VCF: /users/mcevoysu/scratch/output/vcf_filtering/Pavium/Pavium_SPET_allsites_filt_target_V2.vcf.gz
+POP: /users/mcevoysu/scratch/data/Pavium/Pavium_sample_list_filtered_target_rmhybrids.txt
+[pixy] pixy 1.2.7.beta1
+[pixy] See documentation at https://pixy.readthedocs.io/en/latest/
+
+[pixy] Validating VCF and input parameters...
+[pixy] Checking write access...OK
+[pixy] Checking CPU configuration...OK
+[pixy] Checking for invariant sites...OK
+[pixy] Checking chromosome data...OK
+[pixy] Checking intervals/sites...OK
+[pixy] Checking sample data...OK
+[pixy] All initial checks past!
+
+[pixy] Preparing for calculation of summary statistics: pi, dxy, fst
+[pixy] Using Weir and Cockerham (1984)'s estimator of FST.
+[pixy] Data set contains 13 population(s), 8 chromosome(s), and 258 sample(s)
+[pixy] Windows sourced from: /users/mcevoysu/scratch/data/Pavium/pavium_target_regions.bed
+
+[pixy] Started calculations at 14:11:32 on 2025-04-04
+[pixy] Using 16 out of 40 available CPU cores
+
+[pixy] Processing chromosome/contig chr_6...
+[pixy] Processing chromosome/contig chr_5...
+[pixy] Processing chromosome/contig chr_8...
+[pixy] Processing chromosome/contig chr_2...
+[pixy] Processing chromosome/contig chr_1...
+[pixy] Processing chromosome/contig chr_7...
+[pixy] Processing chromosome/contig chr_4...
+[pixy] Processing chromosome/contig chr_3...
+
+[pixy] All calculations complete at 14:12:56 on 2025-04-04
+[pixy] Time elapsed: 00:01:23
+[pixy] Output files written to: /users/mcevoysu/scratch/output/pixy/Pavium/
+
+[pixy] NOTE: There are pixy temp files in /users/mcevoysu/scratch/output/pixy/Pavium/
+[pixy] If these are not actively being used (e.g. by another running pixy process), they can be safely deleted.
+
+[pixy] If you use pixy in your research, please cite the following paper:
+[pixy] Korunes, KL and K Samuk. pixy: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data. Mol Ecol Resour. 2021 Jan 16. doi: 10.1111/1755-0998.13326.
