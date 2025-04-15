@@ -29,8 +29,8 @@ runbusco() {
 #runbusco "Qrobur" "Qrob_PM1N_CDS_aa_20161004.fa" "embryophyta_odb10" "Qrob_busco_o"
 #runbusco "Storminalis" "Spohua.protein.fa" "embryophyta_odb10" "Storminalis_busco_o"
 #runbusco "Qilex" "Ilex_genome/Ilex_Annotation.chromsfixed.pep" "embryophyta_odb10" "Qilex_busco_o"
-runbusco "Pavium" "Prunus_avium_Tieton.proteins.fixeddups.fa" "embryophyta_odb10" "Pavium_busco_o"
-
+#runbusco "Pavium" "Prunus_avium_Tieton.proteins.fixeddups.fa" "embryophyta_odb10" "Pavium_busco_o"
+runbusco "Msylvestris" "Msylvestris_haploid_v2.pep.fa" "embryophyta_odb10" "Msylvestris_busco_o"
 
 # https://github.com/jjwujay/Gymnosperm_odb10/blob/main/Gymnosperm_odb10.tar.gz
 #busco -i $DIR/$INPUT -m prot -l Gymnosperm_odb10 -c 16 -o $OUTPUT -l busco_downloads/lineages/Gymnosperm_odb10

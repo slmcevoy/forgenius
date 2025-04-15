@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    Msylvestris_haploid_v2.chr
+# contigs (>= 0 bp)         3082                      
+# contigs (>= 1000 bp)      1326                      
+# contigs (>= 5000 bp)      356                       
+# contigs (>= 10000 bp)     188                       
+# contigs (>= 25000 bp)     117                       
+# contigs (>= 50000 bp)     87                        
+Total length (>= 0 bp)      661091379                 
+Total length (>= 1000 bp)   660111948                 
+Total length (>= 5000 bp)   658063795                 
+Total length (>= 10000 bp)  656914172                 
+Total length (>= 25000 bp)  655845937                 
+Total length (>= 50000 bp)  654786166                 
+# contigs                   551                       
+Largest contig              55646331                  
+Total length                658811885                 
+GC (%)                      38.03                     
+N50                         36582566                  
+N90                         31461985                  
+auN                         37562074.2                
+L50                         8                         
+L90                         16                        
+# N's per 100 kbp           97.32                     

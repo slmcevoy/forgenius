@@ -27,4 +27,5 @@ runquast() {
 #runquast "Qilex" "Ilex_genome/Ilex_genome.fasta"
 #runquast "Qrobur" "Qrob_PM1N.fa"
 #runquast "Storminalis" "Spohua.genome.fa"
-runquast "Pavium" "Prunus_avium_Tieton.chr.fasta"
+#runquast "Pavium" "Prunus_avium_Tieton.chr.fasta"
+runquast "Msylvestris" "Msylvestris_haploid_v2.chr.fa"
