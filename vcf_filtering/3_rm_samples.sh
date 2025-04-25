@@ -32,7 +32,7 @@ rmsamples() {
         tabix "$OUTDIR"/"${fname}"_V2.vcf.gz
         bcftools stats "$OUTDIR"/"${fname}"_V2.vcf.gz > "$OUTDIR"/statistics/"${fname}"_V2.stats
 	if [ ! -f "${1}"_SPET_invariant_sampleFilt"${2}"_V2.vcf.gz ]; then
-        if [ ! -f "sample_ids_duplicates.txt" ]; then
+        if [ ! -f "$OUTDIR"/"sample_ids_duplicates.txt" ]; then
             bcftools view -S ^"$OUTDIR"/sample_ids_hybrids.txt -Oz "$OUTDIR"/"${1}"_SPET_invariant_sampleFilt"${2}".vcf.gz > "$OUTDIR"/"${1}"_SPET_invariant_sampleFilt"${2}"_V2.vcf.gz
         else
             cat "$OUTDIR"/sample_ids_duplicates.txt "$OUTDIR"/sample_ids_hybrids.txt | bcftools view -S ^- -Oz "$OUTDIR"/"${1}"_SPET_invariant_sampleFilt"${2}".vcf.gz > "$OUTDIR"/"${1}"_SPET_invariant_sampleFilt"${2}"_V2.vcf.gz
@@ -59,8 +59,13 @@ rmsamples() {
 
 #rmsamples "species" " empty string or _V1" "duplicates or hybrids"
 
+#rmsamples "Msylvestris" "" "" "" "duplicates"
+rmsamples "Msylvestris" "" "" "_V1" "hybrids"
+rmsamples "Msylvestris" "_random" "" "_V1" "hybrids"
+rmsamples "Msylvestris" "_target" "" "_V1" "hybrids"
+
 #rmsamples "Pabies" "" "" "" "duplicates"
-rmsamples "Storminalis" "" "" "" "duplicates"
+#rmsamples "Storminalis" "" "" "" "duplicates"
 
 #rmsamples "Fsylvatica" "" "" "" "hybrids"
 #rmsamples "Fsylvatica" "_random" "" "" "hybrids"
