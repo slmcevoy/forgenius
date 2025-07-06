@@ -1,6 +1,6 @@
 library(tidyverse)
 
-setwd("/users/mcevoysu/scratch/scripts/pi")
+setwd("/users/mcevoysu/scratch/forgenius/nucleotide_diversity")
 
 args = commandArgs(trailingOnly=TRUE)
 species <- args[1]

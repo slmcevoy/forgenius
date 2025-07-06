@@ -38,10 +38,10 @@ setupPixy() (
         fi
         echo "BED: ${BED}"
         echo "VCF: $OUTPUT"/vcf_filtering/"$1"/"$1"_SPET_allsites_filt"${3}${2}".vcf.gz
-        echo "POP: $DATADIR"/"${SPECIES}"/"${SPECIES}"_sample_list_filtered"${3}""${RMLIST}".txt
+        echo "POP: $DATADIR"/"${SPECIES}"/"${1}"_sample_list_filtered"${3}""${RMLIST}".txt
 	    pixy --stats pi dxy fst \
 	    --vcf "$OUTPUT"/vcf_filtering/"$1"/"$1"_SPET_allsites_filt"${3}${2}".vcf.gz \
-	    --populations "$DATADIR"/"${SPECIES}"/"${SPECIES}"_sample_list_filtered"${3}""${RMLIST}".txt \
+	    --populations "$DATADIR"/"${SPECIES}"/"${1}"_sample_list_filtered"${3}""${RMLIST}".txt \
 	    --bed_file "${BED}" \
 	    --n_cores 16 \
 	    --output_folder "$OUTPUT"/pixy/"${1}" \
@@ -84,7 +84,7 @@ setupPixy() (
 
 # arguments: popnt(species, version, subsets)
 
-setupPixy "Aalba" "_V1" "yes"
+#setupPixy "Aalba" "_V1" "yes"
 #no v2
 
 #setupPixy "Anebrodensis" "_V1" "yes"
@@ -99,7 +99,7 @@ setupPixy "Aalba" "_V1" "yes"
 
 # Fsylvatica V0=V1
 #setupPixy "Fsylvatica" "" "yes"
-#setupPixy "Fsylvatica" "_V2" "yes"
+setupPixy "Fsylvatica" "_V2" "yes"
 #setupPixy "Fsylvatica_multispecies" "" "Fsyl-Csat-Qile-Qrob_regions.bed"
 #setupPixy "Fsylvatica_multispecies" "_V2" "Fsyl-Csat-Qile-Qrob_regions.bed"
 
@@ -116,6 +116,22 @@ setupPixy "Aalba" "_V1" "yes"
 
 #setupPixy "Pavium" "_V1" "yes"
 #setupPixy "Pavium" "_V2" "yes"
+
+#setupPixy "Msylvestris" "_V1" "yes"
+#setupPixy "Msylvestris" "_V2" "yes"
+
+#setupPixy "Qpetraea" "_V1" "no" "qilex-qrobur_regions.bed"
+#setupPixy "Qpetraea" "_V2" "no" "qilex-qrobur_regions.bed"
+#setupPixy "Qpetraea_multispecies" "_V1" "no" "qilex-qrobur-Csat-Fsyl_regions.bed"
+#setupPixy "Qpetraea_multispecies" "_V2" "no" "qilex-qrobur-Csat-Fsyl_regions.bed"
+#setupPixy "Qpubescens" "_V1" "no" "qilex-qrobur_regions.bed"
+#setupPixy "Qpubescens" "_V2" "no" "qilex-qrobur_regions.bed"
+#setupPixy "Qpubescens_multispecies" "_V1" "no" "qilex-qrobur-Csat-Fsyl_regions.bed"
+#setupPixy "Qpubescens_multispecies" "_V2" "no" "qilex-qrobur-Csat-Fsyl_regions.bed"
+#setupPixy "Qrobur" "_V1" "no" "qilex-qrobur_regions.bed"
+#setupPixy "Qrobur" "_V2" "no" "qilex-qrobur_regions.bed"
+#setupPixy "Qrobur_multispecies" "_V1" "no" "qilex-qrobur-Csat-Fsyl_regions.bed"
+#setupPixy "Qrobur_multispecies" "_V2" "no" "qilex-qrobur-Csat-Fsyl_regions.bed"
 
 # Qilex V0=V1
 #setupPixy "Qilex" "" "no" "qilex-qrobur_regions.bed"
