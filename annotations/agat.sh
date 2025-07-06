@@ -33,6 +33,7 @@ standardizeannotation() {
 #standardizeannotation "Bpendula" "Betula_pendula_subsp_pendula.gff"
 #standardizeannotation "Qrobur" "Qrob_PM1N_genes_20161004.gff"
 #standardizeannotation "Pavium" "Prunus_avium_Tieton.annotation.gff3"
+standardizeannotation "Fsylvatica" "Bhaga_genes.gff3"
 
 #runagat "Ptabuliformis" "P.tabuliformis_V1.0.gene.final_v2_contig_level.name_edits.gtf"
 #runagat "Tchinensis" "GCA_019776745.2_Ta-2021_genomic.gtf"
@@ -45,7 +46,7 @@ standardizeannotation() {
 #runagat "Storminalis" "Spohua.genome.gff3"
 #runagat "Qilex" "Ilex_genome/Ilex_Annotation.gff3"
 #runagat "Pavium" "Prunus_avium_Tieton.annotation.gff3"
-runagat "Msylvestris" "Msylvestris_haploid_v2.gff"
+#runagat "Msylvestris" "Msylvestris_haploid_v2.gff"
 
 #makeproteins "Bpendula" "Betula_pendula_subsp_pendula.gff" "Betula_pendula_subsp_pendula.fasta"
 #makeproteins "Pabies" "Pabies01-gene.gff3" "Pabies1.0-genome.fa"
