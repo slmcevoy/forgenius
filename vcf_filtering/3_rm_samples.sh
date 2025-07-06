@@ -58,11 +58,25 @@ rmsamples() {
 }
 
 #rmsamples "species" " empty string or _V1" "duplicates or hybrids"
+#rmsamples "Qpubescens" "" "" "" "duplicates"
+#rmsamples "Qpubescens" "" "" "_V1" "hybrids"
+#rmsamples "Qpubescens_multispecies" "" "" "" "duplicates"
+#rmsamples "Qpubescens_multispecies" "" "" "_V1" "hybrids"
+
+#rmsamples "Qpetraea" "" "" "" "duplicates"
+#rmsamples "Qpetraea" "" "" "_V1" "hybrids"
+#rmsamples "Qpetraea_multispecies" "" "" "" "duplicates"
+rmsamples "Qpetraea_multispecies" "" "" "_V1" "hybrids"
+
+#rmsamples "Qrobur" "" "" "" "duplicates"
+#rmsamples "Qrobur" "" "" "_V1" "hybrids"
+#rmsamples "Qrobur_multispecies" "" "" "" "duplicates"
+#rmsamples "Qrobur_multispecies" "" "" "_V1" "hybrids"
 
 #rmsamples "Msylvestris" "" "" "" "duplicates"
-rmsamples "Msylvestris" "" "" "_V1" "hybrids"
-rmsamples "Msylvestris" "_random" "" "_V1" "hybrids"
-rmsamples "Msylvestris" "_target" "" "_V1" "hybrids"
+#rmsamples "Msylvestris" "" "" "_V1" "hybrids"
+#rmsamples "Msylvestris" "_random" "" "_V1" "hybrids"
+#rmsamples "Msylvestris" "_target" "" "_V1" "hybrids"
 
 #rmsamples "Pabies" "" "" "" "duplicates"
 #rmsamples "Storminalis" "" "" "" "duplicates"
