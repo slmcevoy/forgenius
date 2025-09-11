@@ -1,0 +1,68 @@
+#!/bin/bash
+#SBATCH --job-name=vcfdeg
+#SBATCH --output=vcfdeg_%j.o
+#SBATCH --error=vcfdeg_%j.e
+#SBATCH --account=project_2009301
+#SBATCH --partition=hugemem
+#SBATCH --time=8:00:00
+#SBATCH --ntasks=1
+#SBATCH --mem=650G
+#SBATCH --mail-type=END
+#SBATCH --cpus-per-task=1
+
+module load biokit
+
+DIR=/users/mcevoysu/scratch/output
+OUTDIR="$DIR"/site_annotation
+
+# codes in fold-annotated file to use in awk below:
+# {'2fold':2, '3fold':2,'intergenic':0 , 'intron':1, 'exon':2, '0fold':3, '4fold':4, '3utr':5, '5utr':6, 'istop':7, 'stop':8, 'unknown':9}
+
+subsets() {
+	VCFDIR="${DIR}"/vcf_filtering/"${1}"
+    VCFNAME="${1}"_SNP_sampleFilt_locimissingness"${2}${3}"
+    GVCFNAME="${1}"_SPET_allsites_filt_locimissingness"${2}${3}"
+	SPECIES=$(echo "${1}" | sed 's/_multispecies//')
+
+	mkdir -p "${OUTDIR}"/"${1}"
+
+    subsetintersect() {
+	    SITE_ANN="${DIR}"/site_annotation/Ptabuliformis/Ptabuliformis_siteannotations"${3}".txt
+#		awk '$6 ~ /3/ {printf ("%s\t%d\t%d\t%s\n", $1, $2-1, $2, $4)}' "${SITE_ANN}" \
+#			| bedtools intersect -header -a "${VCFDIR}"/"${2}".vcf.gz -b - > "${OUTDIR}"/"${1}"/"${2}"_0fold"${4}".vcf
+#        awk '$6 !~ /8|3|2/ && $6 ~ /4/ {printf ("%s\t%d\t%d\t%s\n", $1, $2-1, $2, $4)}' "${SITE_ANN}" \
+#			| bedtools intersect -header -a "${VCFDIR}"/"${2}".vcf.gz -b - > "${OUTDIR}"/"${1}"/"${2}"_4fold"${4}".vcf
+#        awk '$6 !~ /8|3|2/ && $6 ~ /4|0|1/ {printf ("%s\t%d\t%d\t%s\n", $1, $2-1, $2, $4)}' "${SITE_ANN}" \
+#			| bedtools intersect -header -a "${VCFDIR}"/"${2}".vcf.gz -b - > "${OUTDIR}"/"${1}"/"${2}"_4fold_intergenic_intron"${4}".vcf
+#		awk '$6 !~ /8|3|2/ && $6 ~ /4|0|1/ {printf ("%s\t%d\t%d\t%s\n", $1, $2-1, $2, $4)}' "${SITE_ANN}" > "${OUTDIR}"/"${1}"/"${2}"_4fold_intergenic_intron"${4}".tsv
+		bedtools intersect -header -a "${VCFDIR}"/"${2}".vcf.gz -b "${OUTDIR}"/"${1}"/"${2}"_4fold_intergenic_intron"${4}".tsv > "${OUTDIR}"/"${1}"/"${2}"_4fold_intergenic_intron"${4}".vcf	
+
+#		bcftools stats "${OUTDIR}"/"${1}"/"${2}"_4fold.vcf > "${OUTDIR}"/"${1}"/"${2}"_4fold.stats
+#	    bcftools stats "${OUTDIR}"/"${1}"/"${2}"_4fold_intergenic_intron.vcf > "${OUTDIR}"/"${1}"/"${2}"_4fold_intergenic_intron.stats
+#    	bcftools stats "${OUTDIR}"/"${1}"/"${2}"_0fold.vcf > "${OUTDIR}"/"${1}"/"${2}"_0fold.stats
+	}
+
+#	subsetintersect "${1}" "${VCFNAME}" "1-7253244011" "_1_1_1"
+#    subsetintersect "${1}" "${VCFNAME}" "1-7253244011" "_1_1_2"
+#    subsetintersect "${1}" "${VCFNAME}" "1-7253244011" "_1_2_1"
+#    subsetintersect "${1}" "${VCFNAME}" "1-7253244011" "_1_2_2"
+#    subsetintersect "${1}" "${VCFNAME}" "1-7253244011" "_1"
+#    subsetintersect "${1}" "${GVCFNAME}" "1-7253244011" "_1"
+#	subsetintersect "${1}" "${VCFNAME}" "7253244012-14506488021" "_2_1_1"
+#	subsetintersect "${1}" "${VCFNAME}" "7253244012-14506488021" "_2_1_2"
+#	subsetintersect "${1}" "${VCFNAME}" "7253244012-14506488021" "_2_2_1"
+#	subsetintersect "${1}" "${VCFNAME}" "7253244012-14506488021" "_2_2_2"
+#	subsetintersect "${1}" "${GVCFNAME}" "7253244012-14506488021" "_2"
+#    subsetintersect "${1}" "${GVCFNAME}" "7253244012-14506488021" "_2_1_1"
+#    subsetintersect "${1}" "${GVCFNAME}" "7253244012-14506488021" "_2_1_2"
+#    subsetintersect "${1}" "${GVCFNAME}" "7253244012-14506488021" "_2_2_1"
+#    subsetintersect "${1}" "${GVCFNAME}" "7253244012-14506488021" "_2_2_2"
+#    subsetintersect "${1}" "${GVCFNAME}" "1-7253244011" "_1_1_1"
+#    subsetintersect "${1}" "${GVCFNAME}" "1-7253244011" "_1_1_2"
+#    subsetintersect "${1}" "${GVCFNAME}" "1-7253244011" "_1_2_1"
+#    subsetintersect "${1}" "${GVCFNAME}" "1-7253244011" "_1_2_2"
+}
+
+#subsets "Pinusnigra" "_random" "_V1"
+
+
