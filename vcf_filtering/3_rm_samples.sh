@@ -66,7 +66,7 @@ rmsamples() {
 #rmsamples "Qpetraea" "" "" "" "duplicates"
 #rmsamples "Qpetraea" "" "" "_V1" "hybrids"
 #rmsamples "Qpetraea_multispecies" "" "" "" "duplicates"
-rmsamples "Qpetraea_multispecies" "" "" "_V1" "hybrids"
+#rmsamples "Qpetraea_multispecies" "" "" "_V1" "hybrids"
 
 #rmsamples "Qrobur" "" "" "" "duplicates"
 #rmsamples "Qrobur" "" "" "_V1" "hybrids"
